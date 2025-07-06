@@ -5,7 +5,6 @@ import { RotatingLines } from "react-loader-spinner"
 import styles from "./Tablecoin.module.css"
 
 function Tablecoin({ coins, isLoading }) {
-  console.log(coins)
   return (
     <div className={styles.container}>
       {isLoading ? (
