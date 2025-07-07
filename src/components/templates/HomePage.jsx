@@ -14,10 +14,14 @@ function HomePage() {
   useEffect(() => {
     setIsLoading(true)
     const fetchData = async () => {
-      const res = await fetch(getCoinList(page, currency))
-      const json = await res.json()
-      setCoins(json)
-      setIsLoading(false)
+      try {
+        const res = await fetch(getCoinList(page, currency))
+        const json = await res.json()
+        setCoins(json)
+        setIsLoading(false)
+      } catch (error) {
+        console.log(error)
+      }
     }
     fetchData()
   }, [page, currency])
