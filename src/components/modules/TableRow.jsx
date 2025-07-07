@@ -12,6 +12,7 @@ function TableRow({
     current_price,
     price_change_percentage_24h: price_change,
   },
+  currency,
 }) {
   return (
     <tr>
@@ -22,7 +23,12 @@ function TableRow({
         </div>
       </td>
       <td>{name}</td>
-      <td>${current_price.toLocaleString()}</td>
+      <td>
+        {currency === "usd" && <span className={styles.currency}>$</span>}
+        {currency === "eur" && <span className={styles.currency}>€</span>}
+        {currency === "jpy" && <span className={styles.currency}>¥</span>}
+        {current_price.toLocaleString()}
+      </td>
       <td className={price_change > 0 ? styles.success : styles.error}>
         {price_change.toFixed(2)}%
       </td>
