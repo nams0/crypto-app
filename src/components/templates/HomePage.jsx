@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 
 import { getCoinList } from "../../services/cryptoApi"
-import Tablecoin from "../modules/Tablecoin"
+import Tablecoin from "../modules/TableCoin"
 import Pagination from "../modules/Pagination"
 import Search from "../modules/Search"
 import Chart from "../modules/Chart"
@@ -37,7 +37,9 @@ function HomePage() {
         setChart={setChart}
       />
       <Pagination page={page} setPage={setPage} />
-      {!!chart && <Chart chart={chart} setChart={setChart} />}
+      {!!chart && (
+        <Chart chart={chart} setChart={setChart} currency={currency} />
+      )}
     </div>
   )
 }

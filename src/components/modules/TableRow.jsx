@@ -4,9 +4,10 @@ import chartDown from "../../assets/chart-down.svg"
 import styles from "./TableRow.module.css"
 
 import { marketChart } from "../../services/cryptoApi"
+import { getCurrencySymbol } from "../helpers/currencySymbol"
 
-function TableRow({
-  coin: {
+function TableRow({ coin, currency, setChart }) {
+  const {
     id,
     name,
     image,
@@ -14,15 +15,13 @@ function TableRow({
     total_volume,
     current_price,
     price_change_percentage_24h: price_change,
-  },
-  currency,
-  setChart,
-}) {
+  } = coin
+
   const showHandler = async () => {
     try {
       const res = await fetch(marketChart(id))
       const json = await res.json()
-      setChart(json)
+      setChart({ ...json, coin })
     } catch (error) {
       alert(error.message)
       setChart(null)
@@ -38,9 +37,7 @@ function TableRow({
       </td>
       <td>{name}</td>
       <td>
-        {currency === "usd" && <span className={styles.currency}>$</span>}
-        {currency === "eur" && <span className={styles.currency}>€</span>}
-        {currency === "jpy" && <span className={styles.currency}>¥</span>}
+        <span className={styles.currency}>{getCurrencySymbol(currency)}</span>
         {current_price.toLocaleString()}
       </td>
       <td className={price_change > 0 ? styles.success : styles.error}>
