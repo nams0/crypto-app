@@ -4,24 +4,26 @@ A feature-rich cryptocurrency tracking application with interactive charts, real
 
 ## 🔑 Key Features
 
-* 📊 **Interactive Charts** – Detailed price history with Recharts integration (`AreaChart`)
-* 🔍 **Smart Search** – Live coin search with thumbnail previews
-* 🔄 **Multi-Currency Support** – USD, EUR, JPY with dynamic symbol rendering
-* 📈 **Market Data** – Real-time prices, 24h changes, volumes, and ATH tracking
-* 📱 **Responsive Design** – Fully mobile-friendly with adaptive components
-* 🎨 **Dark UI** – Eye-friendly dark theme with vibrant accent colors
+- 📊 **Interactive Charts** – Detailed price history with Recharts integration (`AreaChart`)
+- 🔍 **Smart Search** – Live coin search with thumbnail previews
+- 🔄 **Multi-Currency Support** – USD, EUR, JPY with dynamic symbol rendering
+- 📈 **Market Data** – Real-time prices, 24h changes, volumes, and ATH tracking
+- 📱 **Responsive Design** – Fully mobile-friendly with adaptive components
+- 🎨 **Dark UI** – Eye-friendly dark theme with vibrant accent colors
 
 ## 🧩 Component Highlights
 
-* **Dynamic Chart Modal** – Toggle between price, market cap, and volume views
-* **Smart Pagination** – Optimized 10-page navigation with quick jumps
-* **Data-Rich Tables** – Sortable columns with visual trend indicators
-* **Performance Optimized** – Loading spinners and abort controllers for API calls
+- **Dynamic Chart Modal** – Toggle between price, market cap, and volume views
+- **Smart Pagination** – Optimized 10-page navigation with quick jumps
+- **Data-Rich Tables** – Sortable columns with visual trend indicators
+- **Performance Optimized** – Loading spinners and abort controllers for API calls
 
-## 🛠 Tech Stack
+## 🛠️ Tech Stack
 
-* ⚛️ **React.js** (Functional Components + Hooks)
-* 📈 **Recharts** for data visualization
-* 🎨 **CSS Modules** for scoped styling
-* 🌐 **REST API Integration** (CoinGecko / CoinMarketCap)
-* 💡 **React Icons** library
+| Category           | Technology                               |
+| ------------------ | ---------------------------------------- |
+| Framework          | React.js (Functional Components + Hooks) |
+| Data Visualization | Recharts                                 |
+| Styling            | CSS Modules                              |
+| API Integration    | CoinGecko / CoinMarketCap REST API       |
+| Icons              | React Icons                              |
