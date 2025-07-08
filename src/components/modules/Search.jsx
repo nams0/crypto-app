@@ -1,14 +1,25 @@
 import { useEffect, useState } from "react"
-import { searchCoin } from "../../services/cryptoApi"
+import { marketChart, searchCoin } from "../../services/cryptoApi"
 
 import { RotatingLines } from "react-loader-spinner"
 
 import styles from "./Search.module.css"
 
-function Search({ currency, setCurrency }) {
+function Search({ currency, setCurrency, setChart }) {
   const [text, setText] = useState("")
   const [coins, setCoins] = useState([])
   const [isLoading, setIsLoading] = useState(false)
+
+  const showHandler = async (coin) => {
+    try {
+      const res = await fetch(marketChart(coin.id))
+      const json = await res.json()
+      setChart({ ...json, coin })
+    } catch (error) {
+      alert(error.message)
+      setChart(null)
+    }
+  }
 
   useEffect(() => {
     const controller = new AbortController()
@@ -59,7 +70,7 @@ function Search({ currency, setCurrency }) {
           )}
           <ul>
             {coins.map((coin) => (
-              <li key={coin.id}>
+              <li key={coin.id} onClick={() => showHandler(coin)}>
                 <img src={coin.thumb} alt={coin.name} />
                 <p>{coin.name}</p>
               </li>

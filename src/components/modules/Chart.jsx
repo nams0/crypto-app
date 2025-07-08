@@ -19,7 +19,7 @@ function Chart({ chart, setChart, currency }) {
       <Close className={styles.close} onClick={() => setChart(null)} />
       <div className={styles.chart}>
         <div className={styles.name}>
-          <img src={chart.coin.image} />
+          <img src={chart.coin.image ? chart.coin.image : chart.coin.thumb} />
           <p>{chart.coin.name}</p>
         </div>
         <div className={styles.graph}>

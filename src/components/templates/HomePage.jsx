@@ -29,7 +29,11 @@ function HomePage() {
   }, [page, currency])
   return (
     <div>
-      <Search currency={currency} setCurrency={setCurrency} />
+      <Search
+        currency={currency}
+        setCurrency={setCurrency}
+        setChart={setChart}
+      />
       <Tablecoin
         coins={coins}
         isLoading={isLoading}
