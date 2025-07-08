@@ -12,7 +12,6 @@ import {
 import { convertData } from "../helpers/convertData"
 
 function Graph({ chart, type }) {
-  console.log(convertData(chart, type))
   return (
     <ResponsiveContainer width="100%" height="100%">
       <AreaChart width={400} height={400} data={convertData(chart, type)}>

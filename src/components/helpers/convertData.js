@@ -1,7 +1,4 @@
 const convertData = (chart, type) => {
-  if (type === "prices") {
-    console.log(chart[type])
-  }
   const convertedData = chart[type].map((item) => {
     const rawDate = String(new Date(item[0])).slice(4, 24).split(" ")
     const formatedDate = `${rawDate[0]} ${rawDate[1]} ${rawDate[3]}`

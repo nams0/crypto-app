@@ -30,7 +30,6 @@ function Search({ currency, setCurrency, setChart }) {
       try {
         const res = await fetch(searchCoin(text), { signal: controller.signal })
         const json = await res.json()
-        console.log(json)
         if (json.coins) {
           setCoins(json.coins)
         } else alert(json.status.error_message)
