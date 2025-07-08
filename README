@@ -1,44 +1,27 @@
-# Crypto Tracker Dashboard
+# 💹 Crypto Tracker Dashboard
 
-A feature-rich cryptocurrency tracking application with interactive charts, real-time data, and a sleek dark-themed interface. Built with React and modern web technologies for optimal performance.
+A feature-rich cryptocurrency tracking application with interactive charts, real-time data, and a sleek dark-themed interface. Built with **React** and modern web technologies for optimal performance.
 
-## ✨ Key Features
+## 🔑 Key Features
 
-- **📊 Interactive Charts**: Detailed price history with Recharts integration (AreaChart)
-- **🔍 Smart Search**: Live coin search with thumbnail previews
-- **🔄 Multi-Currency Support**: USD, EUR, JPY with dynamic symbol rendering
-- **📈 Market Data**: Prices, 24h changes, volumes, and ATH tracking
-- **📱 Responsive Design**: Fully mobile-friendly with adaptive components
-- **🎨 Dark UI**: Eye-friendly dark theme with vibrant accent colors
+* 📊 **Interactive Charts** – Detailed price history with Recharts integration (`AreaChart`)
+* 🔍 **Smart Search** – Live coin search with thumbnail previews
+* 🔄 **Multi-Currency Support** – USD, EUR, JPY with dynamic symbol rendering
+* 📈 **Market Data** – Real-time prices, 24h changes, volumes, and ATH tracking
+* 📱 **Responsive Design** – Fully mobile-friendly with adaptive components
+* 🎨 **Dark UI** – Eye-friendly dark theme with vibrant accent colors
 
-## 🎯 Component Highlights
+## 🧩 Component Highlights
 
-### Dynamic Chart Modal
-- Toggle between prices, market caps, and volumes
-- Detailed coin statistics with ATH data
-- Blurred modal backdrop for focus
+* **Dynamic Chart Modal** – Toggle between price, market cap, and volume views
+* **Smart Pagination** – Optimized 10-page navigation with quick jumps
+* **Data-Rich Tables** – Sortable columns with visual trend indicators
+* **Performance Optimized** – Loading spinners and abort controllers for API calls
 
-### Smart Pagination
-- Optimized 10-page navigation system
-- Quick jump buttons and first/last page
-- Disabled states for boundary conditions
+## 🛠 Tech Stack
 
-### Data-Rich Tables
-- Sortable columns with visual trend indicators
-- Hover effects on interactive elements
-- Responsive design for mobile devices
-
-### Performance Optimized
-- Loading spinners during data fetch
-- Abort controllers for API call cancellation
-- Efficient state management
-
-## 🛠️ Tech Stack
-
-| Category        | Technology                          |
-|-----------------|-------------------------------------|
-| Framework       | React.js (Functional Components + Hooks) |
-| Data Visualization | Recharts                          |
-| Styling         | CSS Modules                        |
-| API Integration | CoinGecko/CoinMarketCap REST API   |
-| Icons           | React Icons                        |
+* ⚛️ **React.js** (Functional Components + Hooks)
+* 📈 **Recharts** for data visualization
+* 🎨 **CSS Modules** for scoped styling
+* 🌐 **REST API Integration** (CoinGecko / CoinMarketCap)
+* 💡 **React Icons** library
