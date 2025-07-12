@@ -4,7 +4,7 @@ A feature-rich cryptocurrency tracking application with interactive charts, real
 
 ---
 
-## **🔑 Features**
+## 🔑 Features
 
 - 📊 **Interactive Charts** – Detailed price history with Recharts integration (`AreaChart`)
 - 🔍 **Smart Search** – Live coin search with thumbnail previews
@@ -15,7 +15,7 @@ A feature-rich cryptocurrency tracking application with interactive charts, real
 
 ---
 
-## **🧩 Component Highlights**
+## 🧩 Component Highlights
 
 - 🔁 **Dynamic Chart Modal** – Toggle between prices, market caps, and volumes
 - 📄 **Smart Pagination** – Optimized 10-page navigation with quick jumps
@@ -24,10 +24,10 @@ A feature-rich cryptocurrency tracking application with interactive charts, real
 
 ---
 
-## **🛠️ Tech Stack**
+## 🛠️ Tech Stack
 
 | Category               | Technology                               |
-| ---------------------- | ---------------------------------------- |
+|------------------------|-------------------------------------------|
 | **Framework**          | React.js (Functional Components + Hooks) |
 | **Data Visualization** | Recharts                                 |
 | **Styling**            | CSS Modules                              |
