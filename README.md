@@ -24,10 +24,26 @@ A feature-rich cryptocurrency tracking application with interactive charts, real
 
 ---
 
+## 📸 Screenshots
+
+### 🏠 Home Page
+
+![Home Page](./docs/home-page.png)
+
+### 📈 Coin Details & Chart Modal
+
+![Coin Chart](./docs/coin-chart.png)
+
+### 🔍 Live Search
+
+![Search Feature](./docs/search.png)
+
+---
+
 ## 🛠️ Tech Stack
 
 | Category               | Technology                               |
-|------------------------|-------------------------------------------|
+| ---------------------- | ---------------------------------------- |
 | **Framework**          | React.js (Functional Components + Hooks) |
 | **Data Visualization** | Recharts                                 |
 | **Styling**            | CSS Modules                              |
